@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: stock-db-service
+server:
+  port: 8300
+  
