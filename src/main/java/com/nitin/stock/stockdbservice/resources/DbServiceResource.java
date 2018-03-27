@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.nitin.stock.stockdbservice.model.Quote;
 import com.nitin.stock.stockdbservice.model.Quotes;
-import com.nitin.stock.stockdbservice.repository.QuotesRepo;
+import com.nitin.stock.stockdbservice.repository.QuoteRepo;
 
 @RestController
 @RequestMapping("/rest/db")
 public class DbServiceResource {
 
-	private QuotesRepo quoteRepo;
+	private QuoteRepo quoteRepo;
 
-	public DbServiceResource(QuotesRepo quoteRepo) {
+	public DbServiceResource(QuoteRepo quoteRepo) {
 		super();
 		this.quoteRepo = quoteRepo;
 	}

@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.nitin.stock.stockdbservice.model.Quote;
 
-public interface QuotesRepo extends JpaRepository<Quote, Integer> {
+public interface QuoteRepo extends JpaRepository<Quote, Integer> {
 
 	List<Quote> findByUserName(String userName);
 
